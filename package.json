@@ -26,7 +26,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reddeath1/nevaap.git"
+    "url": "git+https://github.com/reddeath1/nevaa.git"
   },
   "keywords": [
     "nodejs",
@@ -37,7 +37,7 @@
   "author": "FRANK GALOS",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/reddeath1/nevaap/issues"
+    "url": "https://github.com/reddeath1/nevaa/issues"
   },
-  "homepage": "https://github.com/reddeath1/nevaap#readme"
+  "homepage": "https://github.com/reddeath1/nevaa#readme"
 }
