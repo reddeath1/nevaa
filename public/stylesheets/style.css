@@ -1,0 +1,849 @@
+@font-face {
+  font-family: "roboto";
+  font-face-name: roboto;
+  src: url("./fonts/roboto_regular.ttf");
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  background: rgba(255,255,255,1);
+  font-family: roboto;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body{
+  width: 100%;
+  height: auto;
+  float: left;
+  background: transparent;
+}
+
+header{
+  width: 100%;
+  height: 60px;
+  background: #fff;
+}
+
+.h-holder{
+  width: 95%;
+  float: none;
+  display: block;
+  margin: 0px auto;
+  background: transparent;
+}
+
+section.h-holder > .logo{
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-top: 15px;
+}
+
+section.h-holder > .logo > a{
+  text-decoration: none;
+}
+
+section.h-holder > .logo > a > .logo-text {
+    font-size: 2.5vw;
+  font-family: 'Poppins', sans-serif;
+  background-image: -webkit-gradient( linear, left bottom, right top, color-stop(0, rgba(247,187,151,1)), color-stop(0.15, rgba(247,187,151,1)), color-stop(0.6, rgba(247,187,151,1)), color-stop(0.45, rgba(212,90,131,1)), color-stop(0.6,#ff9600),color-stop(0.75, rgba(247,187,151,1)), color-stop(0.9, rgba(212,90,131,1)), color-stop(1, rgba(212,90,131,1)) );
+  background-image: linear-gradient(right top, color-stop(0, rgba(247,187,151,1)), color-stop(0.15, rgba(247,187,151,1)), color-stop(0.6, rgba(247,187,151,1)), color-stop(0.45, rgba(212,90,131,1)), color-stop(0.6,#ff9600),color-stop(0.75, rgba(247,187,151,1)), color-stop(0.9, rgba(212,90,131,1)), color-stop(1, rgba(212,90,131,1)) );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  color:transparent;
+}
+
+section.h-holder > .logo > a > .logo-text:before {
+  background: none;
+  content:attr(data-text);
+  left: 0;
+  position: absolute;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, .2);
+  top: 0;
+  margin-top: 40px;
+}
+
+section.h-holder > .logo > a > img{
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+section.h-holder > nav{
+  width: auto;
+  height: 100%;
+  float: right;
+  font-size: 15px;
+}
+
+section.h-holder > nav > ul{
+  width: 100%;
+}
+
+section.h-holder > nav > ul > li{
+  list-style-type: none;
+  padding: 5px 15px 5px 15px;
+  cursor: pointer;
+  transition: .5s linear 0s;
+  float: left;
+}
+
+section.h-holder > nav > ul > li > a{
+  text-decoration: none;
+  color: rgba(10,10,10,.6);
+  float: left;
+  transition: .7s linear 0s;
+  margin-top: 20px;
+}
+
+section.h-holder > nav > ul > li > i{
+  float: left;
+  margin-top: 22px;
+  transition: .7s linear 0s;
+  color: rgba(10,10,10,.6);
+}
+
+section.h-holder > nav > ul > li > a:hover{
+  color: #ff8e37;
+  text-decoration: underline;
+}
+
+section.h-holder > nav > ul > li > i:hover{
+  color: #ff8e37;
+}
+
+.container{
+  width: 100%;
+  float: left;
+  background: transparent;
+  height: auto;
+}
+
+.container > .holder{
+  width: 95%;
+  background:transparent;
+  display: block;
+  height: 100%;
+  margin: 0px auto;
+}
+
+.container > .holder > .aside{
+  width: 50%;
+  height: 100%;
+  float: left;
+  margin-top: 15%;
+}
+
+.container > .holder > .aside > h1{
+  width: 90%;
+  margin: 0px auto;
+  height: auto;
+  font-size: 55px;
+  color: rgba(10,10,10,.7); /*rgba(100,90,131,1); important*/
+  text-align: justify-all;
+  font-weight: bolder;
+}
+
+.buttons{
+  margin: 10px auto;
+  width: 40%;
+}
+
+.buttons > ul{
+  width: auto;
+}
+
+.buttons > ul > li{
+  float: left;
+  list-style-type: none;
+  margin-left: 30px;
+  transition: .5s linear 0s;
+}
+
+.buttons > ul > li> a{
+  font-size: 30px;
+  color:rgba(212,90,131,1);
+  transition: .7s linear 0s;
+  opacity: .7;
+}
+
+.buttons > ul > li> a:hover{
+  opacity: 1;
+}
+
+.container > .holder > .aside > h3{
+  width: 90%;
+  margin: 50px auto;
+  height: auto;
+  font-size: 20px;
+  text-align: center;
+  font-weight: normal;
+  color: rgba(100,100,100,.9);
+}
+
+.container > .holder > .right{
+  width: 50%;
+  float: left;
+  background: transparent;
+}
+
+.container > .holder > .right > .ph-h{
+  margin-top: 15%;
+  margin-right: 25%;
+  width: 70%;
+  height: 100%;
+  float: right;
+  user-select: none;
+  position: relative;
+  background: transparent;
+  transition: .7s linear 0s;
+}
+
+.container > .holder > .right > .ph-h > .ph-big{
+    width: 280px;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  overflow: hidden;
+   background: transparent;
+}
+
+.container > .holder > .right > .ph-h > .ph-big > .ph-holder{
+  width: 100%;
+  height: 100%;
+  background: url("/images/ph-big.png") no-repeat;
+  background-size:contain;
+  text-align: center;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.container > .holder > .right > .ph-h > .ph-big > section > img{
+    width:255px;
+    height: 540px;
+    background: transparent;
+    z-index: -1;
+    left: 13px;
+    top: 8px;
+  animation: redd 2s linear 0s;
+  transition: 7s linear 0s;
+  display: none;
+    position: absolute;
+}
+
+.container > .holder > .right > .ph-h > .ph-small{
+  width: 250px;
+  height: 520px;
+  position: absolute;
+  float: right;
+  margin-top: 40px;
+  right:60px;
+  z-index: -1;
+  overflow: hidden;
+  background: transparent;
+}
+
+.container > .holder > .right > .ph-h > .ph-small > .ph-holder{
+  width: 100%;
+  height: 100%;
+  background: url("/images/ph-small.png") no-repeat;
+  background-size:contain;
+  text-align: center;
+  float: left;
+  position: relative;
+}
+
+.container > .holder > .right > .ph-h > .ph-small > section > img{
+  width: 225px;
+  height: 450px;
+  background: transparent;
+  z-index: -1;
+  left: 13px;
+  top: 9px;
+  animation: redd 2s linear 0s;
+  transition: 1s linear 0s;
+  display: none;
+  position: absolute;
+}
+
+@-webkit-keyframes redd{
+  from {opacity: .2;
+    -webkit-transition: 1s linear 0s;
+    -moz-transition: 1s linear 0s;
+    -ms-transition: 1s linear 0s;
+    -o-transition: 1s linear 0s;
+    transition: 1s linear 0s;}
+  to {opacity: 1;
+    -webkit-transition: 1s linear 0s;
+    -moz-transition: 1s linear 0s;
+    -ms-transition: 1s linear 0s;
+    -o-transition: 1s linear 0s;
+    transition: 1s linear 0s;}
+}
+
+@keyframes redd{
+  from {opacity: .2;
+    -webkit-transition: 1s linear 0s;
+    -moz-transition: 1s linear 0s;
+    -ms-transition: 1s linear 0s;
+    -o-transition: 1s linear 0s;
+    transition: 1s linear 0s;}
+  to {opacity: 1;
+    -webkit-transition: 2s linear 0s;
+    -moz-transition: 2s linear 0s;
+    -ms-transition: 2s linear 0s;
+    -o-transition: 2s linear 0s;
+    transition: 2s linear 0s;}
+}
+
+.container > .holder > .right > .ph-h > img{
+  width: 100%;
+  height: 100%;
+  float: left;
+  background: transparent;
+}
+
+.container > .holder > .right > .ph-h > .shadow{
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: transparent;
+}
+
+.container > .holder > .right > .b-get{
+  float: right;
+  transition: .7s linear 0s;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  bottom: 10px;
+  z-index: 2;
+  background: transparent;
+}
+
+.container > .holder > .right > .b-get > section{
+  background: rgba(212,90,131,1);
+  width: auto;
+  height: auto;
+  float: left;
+  margin-right: 27px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: .5s linear 0s;
+}
+
+.container > .holder > .right > .b-get > section:hover{
+  opacity: .6;
+}
+
+.container > .holder > .right > .b-get > section > a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  text-decoration: none;
+}
+
+.container > .holder > .right > .b-get > section > a > .left-ico{
+  width: 27px;
+  height: 27px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 8px;
+  background: rgba(255,255,255,.0);
+}
+
+.container > .holder > .right > .b-get > section > a > .gp{
+  width: 30px;
+  height: 30px;
+}
+
+.container > .holder > .right > .b-get > section > a > .left-ico > img{
+  width: 100%;
+  height: 100%;
+  float: left;
+  background: rgba(255,255,255,.0);
+}
+
+.container > .holder > .right > .b-get > section > a > .right-i{
+  width: 115px;
+  padding: 5px 0 5px 0;
+  float: left;
+  height: auto;
+  margin-left: 2px;
+  background: transparent;
+}
+
+.container > .holder > .right > .b-get > section > a > .right-i > p{
+  font-size: 14px;
+  margin-top: 4px;
+  background: transparent;
+  color: rgba(255,255,255,1);
+}
+
+.container > .holder > .right > .b-get > section > a > .right-i > h3{
+  background: transparent;
+  font-size: 17px;
+  padding: 0px;
+  margin-top: -5px;
+  color: rgba(255,255,255,1);
+  font-weight: bold;
+}
+
+/**
+small screens
+ */
+
+@media screen and (max-width: 1366px){
+
+  section.h-holder > .logo > a > .logo-text{
+    font-size: 2.6em;
+  }
+
+  .container > .holder > .right > .ph-h{
+    width:80%;
+    margin-right: 10%;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big{
+    height: 500px;
+    width: 300px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big > section > img{
+    height: 480px;
+    left: 10px;
+    width: 228px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-small{
+    right: 90px;
+    width: 220px;
+    margin-top: 50px;
+    height: 470px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-small > section > img{
+    width: 200px;
+    height: 393px;
+    left: 12px;
+    top: 8px;
+  }
+}
+
+@media screen and (max-width: 1280px){
+  .container > .holder > .right > .ph-h{
+    width: 80%;
+    margin-right: 10px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big{
+        width: 230px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big > section > img{
+    height: 450px;
+    left: 10px;
+    width: 208px;
+  }
+  
+  .container > .holder > .right > .ph-h > .ph-small{
+    right: 70px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+
+  .container > .holder > .right > .ph-h{
+    width: 90%;
+    margin-right: 0px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big{
+    width: 230px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big > section > img{
+    height: 450px;
+    left: 10px;
+    width: 208px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-small{
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 960px){
+  section.h-holder > .logo > a > .logo-text{
+    font-size: 2.6em;
+  }
+
+  .buttons{
+    width: 80%;
+  }
+
+  .container > .holder > .right > .aside{
+    margin-top: 50%;
+  }
+
+  .container > .holder > .right > .ph-h{
+    width: 85%;
+    margin-right: 0px;
+    margin-top: 20%;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big{
+    height: 500px;
+    width: 220px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big > section > img{
+    height: 425px;
+    left: 6px;
+    top: 5px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-small{
+    right: -10px;
+    width: 200px;
+    margin-top: 35px;
+    height: 400px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-small > section > img{
+    width: 186px;
+    height: 358px;
+    left: 9px;
+    top: 7px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  section.h-holder > .logo > a > .logo-text{
+    font-size: 2.6em;
+  }
+
+  .container > .holder > .aside{
+    width: 100%;
+    margin-top: 6%;
+  }
+
+  .container > .holder > .aside > h3{
+    margin-top: 20px;
+  }
+
+  .container > .holder > .right{
+    width: 100%;
+  }
+  .container > .holder > .right > .ph-h{
+    width: 70%;
+    margin-top: 15%;
+    position: relative;
+    float: right;
+    height: 600px;
+  }
+
+  .container > .holder > .right > .b-get{
+    position: relative;
+    width: 80%;
+    margin-top: 30px;
+    float: right;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big{
+    height: 500px;
+    width: 240px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big > section > img{
+    width: 223px;
+    height: 468px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-small{
+    height: 400px;
+    width: 220px;
+    right: 50px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-small > section > img{
+    height: 380px;
+    width: 195px;
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 670px){
+  section.h-holder > .logo > a > .logo-text{
+    font-size: 2.6em;
+  }
+
+  .container > .holder > .aside{
+    width: 100%;
+    margin-top: 6%;
+  }
+
+  .container > .holder > .aside > h3{
+    margin-top: 20px;
+  }
+
+  .container > .holder > .right{
+    width: 100%;
+  }
+  .container > .holder > .right > .ph-h{
+    width: 77%;
+    margin-top: 15%;
+    position: relative;
+    float: right;
+    height: 600px;
+  }
+
+  .container > .holder > .right > .b-get{
+    position: relative;
+    width: 80%;
+    margin-top: 30px;
+    float: right;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big{
+    height: 500px;
+    width: 240px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big > section > img{
+    width: 223px;
+    height: 468px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-small{
+    height: 400px;
+    width: 220px;
+    right: 50px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-small > section > img{
+    height: 380px;
+    width: 195px;
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 640px){
+
+  section.h-holder > .logo > a > .logo-text{
+    font-size: 2.6em;
+  }
+
+  .container > .holder > .aside{
+    width: 100%;
+    margin-top: 6%;
+  }
+
+  .container > .holder > .aside > h3{
+    margin-top: 20px;
+  }
+
+  .container > .holder > .right{
+    width: 100%;
+  }
+  .container > .holder > .right > .ph-h{
+    width: 80%;
+    margin-top: 15%;
+    margin-right: 0px;
+    position: relative;
+    float: right;
+    height: 600px;
+  }
+
+  .container > .holder > .right > .b-get{
+    position: relative;
+    width: 80%;
+    margin-top: 30px;
+    float: right;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big{
+    height: 500px;
+    width: 240px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big > section > img{
+    width: 223px;
+    height: 468px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-small{
+    height: 400px;
+    width: 220px;
+    right: 50px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-small > section > img{
+    height: 380px;
+    width: 195px;
+    right: 10px;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+  .container > .holder > .right > .ph-h{
+    width: 85%;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big > section > img{
+    top: 5px;
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 533px){
+  .container > .holder > .right > .ph-h{
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 441px){
+  section.h-holder > .logo{
+    width: 100%;
+    text-align: center;
+  }
+
+  section.h-holder > .logo > a > .logo-text:before{
+    margin-top: 1px;
+  }
+
+  section.h-holder > nav > ul > li{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .container > .holder > .aside > h1{
+    font-size: 30px;
+  }
+
+  .container > .holder > .aside > h3{
+    font-size: 17px;
+  }
+
+  .container > .holder > .right > .ph-h{
+    width: 100%;
+    margin-right: -10px;
+    height: 400px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big{
+    width: 260px;
+    height: 400px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big > section > img{
+    left: 10px;
+    width: 70%;
+    height: 380px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-small{
+    height: 350px;
+    width: 200px;
+    margin-top: 25px;
+    right:20px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-small > section > img{
+    left: 8px;
+    width: 170px;
+    height: 330px;
+    margin-top: 0px;
+  }
+
+  .buttons{
+    width: 80%;
+  }
+  .container > .holder > .right > .b-get{
+    width: 100%;
+  }
+
+  .container > .holder > .right > .b-get > section{
+    margin-right: 10px;
+  }
+
+}
+
+@media screen and (max-width: 412px) {
+  .container > .holder > .right > .ph-h > .ph-small > section > img{
+    top: 5px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big > section > img{
+    top: 5px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  section.h-holder > .logo{
+    width: 100%;
+    text-align: center;
+  }
+
+  section.h-holder > .logo > a > .logo-text:before{
+   margin-top: 1px;
+  }
+
+  section.h-holder > nav > ul > li{
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .container > .holder > .aside > h1{
+    font-size: 30px;
+  }
+
+  .container > .holder > .aside > h3{
+    font-size: 17px;
+  }
+
+  .container > .holder > .right > .ph-h{
+    width: 100%;
+    margin-right: 0px;
+    min-height: 400px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big{
+
+  }
+
+  .container > .holder > .right > .ph-h > .ph-big > section > img{
+
+  }
+
+  .container > .holder > .right > .ph-h > .ph-small{
+        margin-right: -30px;
+  }
+
+  .container > .holder > .right > .ph-h > .ph-small > section > img{
+     margin-top: -3px;
+  }
+
+  .buttons{
+    width: 100%;
+  }
+  .container > .holder > .right > .b-get{
+    width: 80%;
+  }
+
+  .container > .holder > .right > .b-get > section{
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+
+}
