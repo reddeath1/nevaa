@@ -257,6 +257,7 @@ section.h-holder > nav > ul > li > i:hover{
   text-align: center;
   float: left;
   position: relative;
+  overflow: hidden;
 }
 
 .container > .holder > .right > .ph-h > .ph-small > section > img{
@@ -274,32 +275,41 @@ section.h-holder > nav > ul > li > i:hover{
 
 @-webkit-keyframes redd{
   from {opacity: .2;
-    -webkit-transition: 1s linear 0s;
-    -moz-transition: 1s linear 0s;
-    -ms-transition: 1s linear 0s;
-    -o-transition: 1s linear 0s;
-    transition: 1s linear 0s;}
-  to {opacity: 1;
-    -webkit-transition: 1s linear 0s;
-    -moz-transition: 1s linear 0s;
-    -ms-transition: 1s linear 0s;
-    -o-transition: 1s linear 0s;
-    transition: 1s linear 0s;}
+    -webkit-transition: 1.5s linear 0s;
+    -moz-transition: 1.5s linear 0s;
+    -ms-transition: 1.5s linear 0s;
+    -o-transition: 1.5s linear 0s;
+    transition: 1.5s linear 0s;
+    transform: scale(.99);
+  }
+  to {
+    opacity: 1;
+    -webkit-transition: 2.5s linear 0s;
+    -moz-transition: 2.5s linear 0s;
+    -ms-transition: 2.5s linear 0s;
+    -o-transition: 2.5s linear 0s;
+    transition: 2.5s linear 0s;
+    transform: scale(1);
+  }
 }
 
 @keyframes redd{
   from {opacity: .2;
-    -webkit-transition: 1s linear 0s;
-    -moz-transition: 1s linear 0s;
-    -ms-transition: 1s linear 0s;
-    -o-transition: 1s linear 0s;
-    transition: 1s linear 0s;}
+    -webkit-transition: 1.5s linear 0s;
+    -moz-transition: 1.5s linear 0s;
+    -ms-transition: 1.5s linear 0s;
+    -o-transition: 1.5s linear 0s;
+    transition: 1.5s linear 0s;
+      transform: scale(.99);
+  }
   to {opacity: 1;
-    -webkit-transition: 2s linear 0s;
-    -moz-transition: 2s linear 0s;
-    -ms-transition: 2s linear 0s;
-    -o-transition: 2s linear 0s;
-    transition: 2s linear 0s;}
+    -webkit-transition: 2.5s linear 0s;
+    -moz-transition: 2.5s linear 0s;
+    -ms-transition: 2.5s linear 0s;
+    -o-transition: 2.5s linear 0s;
+    transition: 2.5s linear 0s;
+      transform: scale(1);
+  }
 }
 
 .container > .holder > .right > .ph-h > img{
